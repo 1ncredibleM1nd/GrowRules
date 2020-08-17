@@ -65,7 +65,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
     trueButton.addEventListener('click', () => {
-        locationChose.style.display = 'none'
+        locationChose.style.display = 'none';
+        window.onscroll = function () {
+            window.onscroll = null;
+        };
+
     });
     falseButton.addEventListener('click', () => {
 
