@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-Ru"></html>
 <head><meta charset="utf-8">
-<title>Gradient.com</title>
+<title>PravilaRosta.com</title>
 <link rel="shortcut icon" href="" type="image/png">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -9,6 +9,80 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/license">
 </head>
 <body>
+  <div class="enter">
+    <div class="enter__form">
+      <form action="">
+        <div class="remember">
+          <h2 class="events__card__title">Вход</h2>
+          <button class="close_btn">&times;</button>
+        </div>
+        <input class="form-input" placeholder="Email" required="true"/>
+        <input class="form-input" placeholder="Пароль" required="true"/>
+        <div class="remember">
+          <label class="remember__check" for="remember1">
+            <input type="checkbox" id="remember1"/><span>Запомнить меня</span>
+          </label>
+          <button class="forget__password">Забыли пароль?</button>
+        </div>
+        <div class="buttons">
+          <button class="enter__btn" type="submit">Войти</button>
+          <button class="registrate">Регистрация</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="registration">
+    <form class="registration__form" action="">
+      <div class="remember">
+        <h2 class="events__card__title">Регистрация</h2>
+        <button class="registration_close">&times;</button>
+      </div>
+      <input class="form-input" placeholder="ФИО" required="true"/>
+      <input class="form-input" placeholder="Номер телефона" required="true"/>
+      <input class="form-input" placeholder="E-mail" required="true"/>
+      <input class="form-input" placeholder="Пароль" required="true"/>
+      <input class="form-input" placeholder="Повторите пароль" required="true"/>
+      <div class="remember">
+        <label class="remember__check" for="remember1">
+          <input type="checkbox" id="remember1"/><span class="registration__text">Я принимаю пользовательское соглашение и условия обработки персональных данных</span>
+        </label>
+      </div>
+      <div class="buttons">
+        <button class="registrature" type="submit">Регистрация</button>
+      </div>
+    </form>
+  </div>
+  <div class="success">
+    <div class="success__form">
+      <div class="rem">
+        <h2 class="events__card__title">Готово</h2>
+        <button class="success_close">&times;</button>
+      </div>
+      <p class="success__text">На указанную Вами почту отправлено письмо с подтверждением. Чтобы завершить регистрацию, перейдите по ссылке в письме.</p>
+    </div>
+  </div>
+  <div class="forget">
+    <form class="forget__form" action="">
+      <div class="remember">
+        <button class="return"><img src="./img/arrow-return.svg" alt="Return"/></button>
+        <h2 class="events__card__title">Забыли пароль?</h2>
+        <button class="close_btn">&times;</button>
+      </div><span>Введите E-mail, на который зарегестрирован Ваш аккаунт. Мы отправим вам письмо с ссылкой на сброс пароля.</span>
+      <input class="form-input" placeholder="Email" required="true"/>
+      <div class="buttons">
+        <button class="ready-btn" type="submit">Готово</button>
+      </div>
+    </form>
+  </div>
+  <div class="password__success">
+    <div class="success__form">
+      <div class="rem">
+        <h2 class="events__card__title">Готово</h2>
+        <button class="password-success-btn">&times;</button>
+      </div>
+      <p class="success__text">На Вашу почту отправлено письмо с ссылкой на сброс пароля.</p>
+    </div>
+  </div>
   <nav class="location-togler">
     <button class="region"><span class="region__text">Ваш регион:</span><span class="city">Санкт-Петербург</span></button>
     <div class="number"><img class="phone-num" src="./img/telephone.svg" alt="phone"/><span class="city">8(900)000 00 00</span></div>
@@ -72,7 +146,7 @@
     <div class="carousel_item">
       <div class="carousel__item__photo"></div>
       <div class="carousel__item__descr">
-        <blockquote class="words">Семья – наивысшая ценность для любого человека. Именно семья даёт нам возможность для реализации базовых жизненных смыслов, ресурсы для полной и успешной жизни, базис для индивидуального вклада в жизнь общества. Семейные практики закладывают основу взаимоотношений в социуме, учат взаимному уважению и почитанию старшего поколения.семья даёт нам возможность для реализации базовых жизненных смыслов, ресурсы для полной и успешной жизни, базис для индивидуального вклада в жизнь общества.</blockquote>
+        <blockquote class="words">Семья – наивысшая ценность для любого человека. Именно семья даёт нам возможность для реализации базовых жизненных смыслов, ресурсы для полной и успешной жизни, базис для индивидуального вклада в жизнь общества. Семейные практики закладывают основу взаимоотношений в социуме, учат взаимному уважению и почитанию старшего поколения.</blockquote>
         <div class="owner-info">
           <p class="owner">Ольга Ходаковская</p>
           <p class="owners-post">Президент РОО «Правила роста»</p>
@@ -81,7 +155,7 @@
     </div>
     <div class="carousel_item">
       <div class="carousel__item__descr">
-        <blockquote class="words">Мы живём в мире высоких технологий и информационной перегрузки, смены авторитетов и трансформации ценностей, демонстративного потребления и социального расслоения. Но по-настоящему многого можно достичь только даря жизнь, создавая благополучное завтра нашим детям, поддерживая родителей и семьи с детьми.семья даёт нам возможность для реализации базовых жизненных смыслов, ресурсы для полной и успешной жизни, базис для индивидуального вклада в жизнь общества. Этим и занимаются «Правила роста».</blockquote>
+        <blockquote class="words">Мы живём в мире высоких технологий и информационной перегрузки, смены авторитетов и трансформации ценностей, демонстративного потребления и социального расслоения. Но по-настоящему многого можно достичь только даря жизнь, создавая благополучное завтра нашим детям, поддерживая родителей и семьи с детьми. Этим и занимаются «Правила роста».</blockquote>
         <div class="owner-info">
           <p class="owner">Екатерина Глейзер</p>
           <p class="owners-post">Исполнительный директор РОО «Правила роста»</p>

@@ -49,16 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     }
-
-
     const regionButton = document.querySelector('.region'),
         trueButton = document.querySelector('.answer-true'),
         falseButton = document.querySelector('.answer-false'),
-        locationChose = document.querySelector('.location-chose'),
-        cityBlock = document.querySelector('.city');
+        locationChose = document.querySelector('.location-chose');
     locationChose.style.display = 'none';
     regionButton.addEventListener('click', () => {
-        locationChose.style.display = 'block'
+        locationChose.style.display = 'block';
         window.onscroll = function () {
             window.scrollTo(0, 0);
         };
@@ -72,7 +69,78 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
     falseButton.addEventListener('click', () => {
+    });
+    if($('.enter__form').length){
 
-    })
+        cityBlock = document.querySelector('.city'),
+        enterBtn=document.querySelector('.header-list__btn'),
+        enterForm=document.querySelector('.enter'),
+        closeBtn=document.querySelector('.close_btn'),
+        registrateBtn=document.querySelector('.registrate'),
+        registrateForm=document.querySelector('.registration'),
+        registrature=document.querySelector('.registrature'),
+        registrationClose =document.querySelector('.registration_close'),
+        successForm=document.querySelector('.success'),
+        successClose=document.querySelector('.success_close'),
+        forgetBtn=document.querySelector('.forget__password'),
+        forgetTab=document.querySelector('.forget'),
+        returnBtn=document.querySelector('.return'),
+        readyBtn=document.querySelector('.ready-btn'),
+        passwordSuccess=document.querySelector('.password__success'),
+        passwordSuccessBtn=document.querySelector('.password-success-btn');
 
-});
+    passwordSuccess.style.display='none';
+    forgetTab.style.display='none';
+
+    enterForm.style.display='none';
+    registrateForm.style.display='none';
+    successForm.style.display='none';
+
+
+
+    enterBtn.addEventListener('click', ()=>{
+        enterForm.style.display='block';
+        window.onscroll = function () {
+            window.scrollTo(0, 0);
+        };
+    });
+    closeBtn.addEventListener('click',()=>{
+        enterForm.style.display='none';
+        window.onscroll = null;
+    });
+    registrateBtn.addEventListener('click',(e)=>{
+        enterForm.style.display='none';
+        e.preventDefault();
+        registrateForm.style.display='block'
+    });
+    registrationClose.addEventListener('click',(e)=>{
+        e.preventDefault();
+        registrateForm.style.display='none';
+        window.onscroll=null;
+    });
+    successClose.addEventListener('click',(e)=>{
+        e.preventDefault();
+        successForm.style.display='none'
+    });
+    registrature.addEventListener('click',()=>{
+        registrateForm.style.display='none';
+        successForm.style.display='block'
+    });
+    forgetBtn.addEventListener('click',()=>{
+        enterForm.style.display='none';
+        forgetTab.style.display='block'
+    });
+    returnBtn.addEventListener('click',(e)=>{
+        e.preventDefault();
+        forgetTab.style.display='none';
+        enterForm.style.display='block'
+    });
+    readyBtn.addEventListener('click',()=>{
+        forgetTab.style.display='none';
+        passwordSuccess.style.display='block'
+    });
+    passwordSuccessBtn.addEventListener('click',()=>{
+        passwordSuccess.style.display='none'
+    });
+
+}});
